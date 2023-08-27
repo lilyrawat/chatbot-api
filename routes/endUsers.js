@@ -3,18 +3,18 @@ const router = express.Router();
 const endUserController = require("../controllers/endUserController");
 
 // Register a new end user
-router.post("/endusers", endUserController.registerEndUser);
+router.post("/", endUserController.registerEndUser);
 
 // Get all end users
-router.get("/endusers", endUserController.getAllEndUsers);
+router.get("/", endUserController.getAllEndUsers);
 
 // Get a single end user by ID
-router.get("/endusers/:endUserId", endUserController.getEndUserById);
+router.get("/:endUserId", endUserController.getEndUserById);
 
 // Update end user details
-router.put("/endusers/:endUserId", endUserController.updateEndUser);
+router.put("/:endUserId", endUserController.updateEndUser);
 
 // Delete an end user
-router.delete("/endusers/:endUserId", endUserController.deleteEndUser);
+router.delete("/:endUserId", endUserController.deleteEndUser);
 
 module.exports = router;

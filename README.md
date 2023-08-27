@@ -18,7 +18,6 @@ Now that we've install all the dependencies we will simply run the project by th
 
 ```
 npm start
-
 ```
 
 ### Run the API enpoints

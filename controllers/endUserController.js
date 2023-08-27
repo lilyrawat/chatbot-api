@@ -54,21 +54,20 @@ const updateEndUser = async (req, res) => {
     const { endUserId } = req.params;
     const { name, email } = req.body;
 
-    const endUser = await EndUser.findByPk(endUserId);
+    const [updatedRowsCount, updatedChatbots] = await EndUser.update(
+      { name, email },
+      { where: { id: endUserId }, returning: true }
+    );
 
-    if (!endUser) {
-      res.status(404).json({ message: "End user not found" });
+    if (updatedRowsCount === 0) {
+      res.status(404).json({ message: "Chatbot not found" });
     } else {
-      endUser.name = name;
-      endUser.email = email;
-      await endUser.save();
-
-      res.json(endUser);
+      res.json(updatedChatbots[0]);
     }
   } catch (error) {
     res
       .status(400)
-      .json({ message: "Error updating end user", error: error.message });
+      .json({ message: "Error updating chatbot", error: error.message });
   }
 };
 
