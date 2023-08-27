@@ -4,9 +4,9 @@
 
 A RESTful API using Express.js framework backed by SQLite and Sequelize ORM. The API will serve as the backend for a platform where users can create chatbots.
 
-##Screenshots of the project 
+## Screenshots of the project 
 
-###User 
+### User 
 Create User
 ![create user](https://github.com/lilyrawat/chatbot-api/assets/62024234/8c7603a1-663b-4dc7-9f68-b403df5353a8)
 ![create user 2](https://github.com/lilyrawat/chatbot-api/assets/62024234/550b5d6e-735d-460d-9b49-4752a8155247)
@@ -20,7 +20,7 @@ Updating User
 Deleting User 
 ![delete user](https://github.com/lilyrawat/chatbot-api/assets/62024234/10ef671c-4939-4271-b9f8-c68c50187336)
 
-###Chatbot
+### Chatbot
 Create Chatbot
 ![create chatbot](https://github.com/lilyrawat/chatbot-api/assets/62024234/b66c6407-da1b-422e-bb58-e77baeb39fb5)
 
@@ -33,7 +33,7 @@ Update Chatbot
 Delete Chatbot
 ![delete chatbot](https://github.com/lilyrawat/chatbot-api/assets/62024234/b52ef39a-2679-4c32-b312-511321fa8a0a)
 
-###Conversations
+### Conversations
 Start a conversation 
 ![start conversation](https://github.com/lilyrawat/chatbot-api/assets/62024234/ce649526-2bc0-4b06-a951-0a97c22a0b17)
 
@@ -43,7 +43,7 @@ List all conversations
 Update Conversation
 ![Update Conversation](https://github.com/lilyrawat/chatbot-api/assets/62024234/e0f7ea73-b978-4499-b724-40f7760de6a4) 
 
-###EndUser
+### EndUser
 Creating Enduser
 ![Creating Enduser](https://github.com/lilyrawat/chatbot-api/assets/62024234/e542919c-81f7-4de5-af83-5c2053db5898)
 
