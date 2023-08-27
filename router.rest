@@ -1,0 +1,164 @@
+//Create a new user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "username":"johndoe",
+  "password":"john@doe",
+  "email": "john@example.com"
+}
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "username":"lilyrawat",
+  "password":"lily@rawat",
+  "email": "lily@gmail.com"
+}
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "username":"harshita",
+  "password":"harshita@rawat",
+  "email": "harshita04@gmail.com"
+}
+
+###
+
+//list all users 
+GET http://localhost:3000/users
+
+###
+//Retrieve a single user
+GET http://localhost:3000/users/1
+
+###
+//Update a user
+PUT http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+  "username": "Leedoe"
+}
+
+###
+//Delete a user
+DELETE http://localhost:3000/users/3
+
+
+###
+//Create a new chatbot for a user
+POST http://localhost:3000/chatbots/users/1/
+Content-Type: application/json
+
+{
+  "name": "My Chatbot",
+  "description": "A chatbot for testing"
+}
+
+###
+//Create a new chatbot for a user
+POST http://localhost:3000/chatbots/users/1/
+Content-Type: application/json
+
+{
+  "name": "talking Chatbot",
+  "description": "A chatbot for talking"
+}
+
+###
+//List all chatbots for a user
+GET http://localhost:3000/chatbots/users/1/
+
+###
+//Retrieve a single chatbot
+GET http://localhost:3000/chatbots/1
+
+###
+//Update a chatbot
+PUT http://localhost:3000/chatbots/1
+Content-Type: application/json
+
+{
+  "description": "Updated description"
+}
+
+###
+//Delete a chatbot
+DELETE http://localhost:3000/chatbots/1
+
+###
+//Start a new conversation for a chatbot
+POST http://localhost:3000/conversations/chatbots/1
+Content-Type: application/json
+
+{
+  "message": "hello"
+}
+
+###
+//Start a new conversation for a chatbot
+POST http://localhost:3000/conversations/chatbots/1
+Content-Type: application/json
+
+{
+  "message": "How are you"
+}
+
+###
+//List all conversations for a chatbot:
+GET http://localhost:3000/conversations/chatbots/1
+
+###
+//Retrieve a single conversation:
+GET http://localhost:3000/conversations/1
+
+###
+//Update a conversation (mark as completed):
+PUT http://localhost:3000/conversations/1
+Content-Type: application/json
+
+{
+  "isCompleted": true
+}
+
+###
+//End a conversation
+DELETE http://localhost:3000/conversations/1
+
+###
+//Register a new end user:
+POST http://localhost:3000/endusers
+Content-Type: application/json
+
+{
+  "name": "Alice",
+  "email": "alice@example.com"
+}
+
+###
+//List all end users:
+GET http://localhost:3000/endusers
+
+###
+//Retrieve details of a single end user:
+GET http://localhost:3000/endusers/1
+
+### 
+//Update end user details:
+
+PUT http://localhost:3000/endusers/1
+Content-Type: application/json
+
+{
+  "email": "updated@example.com"
+}
+
+###
+//Delete an end user:
+DELETE http://localhost:3000/endusers/1
